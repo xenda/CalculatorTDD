@@ -44,7 +44,7 @@ describe Calculadora do
 
 	describe "#divide" do
 		it "should return 5 when dividing 20 by 4" do
-			@calculadora.divide(20, 4) == 5
+			@calculadora.divide(20, 4).should == 5
 		end
 	end
 
