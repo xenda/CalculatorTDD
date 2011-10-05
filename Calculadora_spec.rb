@@ -26,16 +26,6 @@ describe Calculadora do
     end
   end
 
-  describe "#es_cero?" do
-    it "returns false if the number is not 0" do
-      calculadora.es_cero?(5).should == false
-    end
-
-    it "returns true if the number is 0" do
-      calculadora.es_cero?(0).should == true
-    end
- end
-
   describe "#divide" do
     it "returns 5 when dividing 20 by 4" do
       calculadora.divide(20, 4).should == 5

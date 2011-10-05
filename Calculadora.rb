@@ -13,12 +13,8 @@ class Calculadora
     e * f
   end
 
-  def es_cero?(g)
-    g == 0
-  end
-
   def divide (numerador, denominador)
-    ( numerador / denominador ) unless es_cero?(denominador)
+    ( numerador / denominador ) unless denominador.zero?
   end
 
 end
